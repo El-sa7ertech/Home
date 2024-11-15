@@ -1,0 +1,131 @@
+* {
+box-sizing: border-box; transition:all .3s;
+}
+ html, body {
+ margin: 0;padding: 0;
+}
+ ul.topna {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background: #333 linear-gradient(black,gray);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  text-align: center;
+  
+ }
+
+ul.topna .itm {
+  float: left;
+}
+
+ul.topna .itm a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  
+}
+.right {
+float:right;
+}
+
+/* Change the link color to #111 (black) on hover */
+ul.topna .itm a:hover {
+  background: #111 linear-gradient(90deg,red,black);
+  
+}
+a.active {
+background-color:red;  background: #111 linear-gradient(90deg,red,black);
+
+}
+ul.topna {
+box-reflect: below 0px linear-gradient(to bottom, rgba(0,0,0,0.0), rgba(0,0,0,1));
+/*-webkit-box-reflect: below 10px linear-gradient(to bottom, rgba(0,0,0,0.0), rgba(0,0,0,1));
+border-bottom:5px solid yellow;*/
+
+border-image:linear-gradient(30deg,red,black,red,black,red,black,red,black)  1% stretch;   
+
+}
+@media screen and (max-width: 500px) {
+        .ser  {
+            display:none;
+         }
+      }
+     .logo {
+width: 100%;
+height: 100px;
+Background-image: linear-gradient(red,black);
+/*-webkit-box-reflect: below 10px linear-gradient(to bottom, rgba(0,0,0,0.0), rgba(0,0,0,1));*/
+
+}
+.unlin
+{
+border-bottom:5px solid red ;
+border-image:linear-gradient(30deg,red,black,red,black,red,black,red,black)  1% round;   
+}
+ul.topna .itm a svg {
+font-size:normal;
+}
+h2 {
+font-size:32px;
+font-family:amin;
+}
+@font-face { 
+font-family: amin;
+src: url("fonts/big_noodle_titling.ttf") format("truetype");
+}
+ul.topna::after {
+ 
+         content: "";
+         display: block; 
+         clear: both;
+
+}
+.nav-bar {
+display:block;
+} 
+.dd {
+overflow:visible;
+}
+ .dd:hover > .dd-content {
+ width:250px;
+ display:block;
+ opacity:1;
+}
+.dd-content {
+display:block;
+position:absolute;
+top: 50px;
+width:0px;
+opacity:0;
+background:#ff7e40 linear-gradient(30deg,red,gray);
+height:754px;
+overflow-y:scroll;
+}
+ .dd-content > a {
+         display: block;
+         padding: 5px;
+         text-decoration: none;
+         color: white;
+         text-align:left;
+         font-family:amin;
+         border-radius:10px;
+         background-color:white;
+         margin :7px 5px;
+         background: white linear-gradient(270deg,black,gray);
+         font-size:23.5px;
+          }
+   .home-rad {
+border-radius:50%;
+margin:0px 20px;
+}
+.ic-co {
+overflow:hidden;
+position:relative;
+}
+.ic-co svg{
+transform:scale(2.1);
+padding-top:-10px;
+}

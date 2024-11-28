@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<style>
+* {
+box-sizing: border-box;
+margin :0px; 
+outline:0px;
+padding :10px;
+}
+ html, body {
+ margin: 0;padding: 0;
+}
+#dem a {
+padding : 16px;
+font-size:20px;
+background-color:green;
+color:white;
+border-radius:10px;
+border:4px solid black;
+text-decoration:none;
+margin :10px;
+display:block;
+Background-image: linear-gradient(silver,white);
+color:black;
+
+}
+#dem2 a {
+padding : 16px;
+font-size:20px;
+background-color:green;
+color:white;
+border-radius:10px;
+border:4px solid white;
+text-decoration:none;
+margin :10px;
+display:block;
+Background-image: linear-gradient(silver,black);
+color:white;
+width:100%;
+}
+
+input {
+display :block;
+width:100%;
+border-radius:10px;
+
+}
+.con {
+width:100%;
+background-color:cayn;
+}
+.zain {
+box-sizing: border-box;
+width:50%;
+float:left;
+Background-image:linear-gradient(black,purple,cyan,purple,black);
+color:white;
+height:100vh;
+}
+.sudani  {
+width:50%;
+float:left;
+Background-image:linear-gradient(blue, cyan,lightgreen);
+box-sizing: border-box;
+height:100vh;
+}
+.con::after {
+         content: "";
+         display: block; 
+         clear: both;
+      }
+</style> 
+</head>
+<body>
+    <div class="con" > 
+<div class="zain" > <div> <h1>الرقم <br> zain</h1><input type="text" id="zainn"></div>
+  <div><h1>القيمة <br> zain</h1> <input type="text" id="zainv"></div>
+   
+ <div id="demo"></div>
+ <div id="dem"></div>
+ 
+ </div>
+<div class="sudani"> 
+  <div> <h1>الرقم sudani</h1><input type="text" id="sun"></div>
+  
+    <div><h1>القيمة sudani</h1> <input type="text" id="suv"></div>
+    
+  
+ <div id="demo1"></div>
+ <div id="dem2"></div>
+ 
+ </div>
+ </div>
+ </div> 
+   <script>
+      
+n = setInterval( a,100)
+function a() {
+var zv=  document.getElementById("zainv").value;
+var zn=  document.getElementById("zainn").value;
+var sv=  document.getElementById("suv").value;
+var sn=  document.getElementById("sun").value;
+document.getElementById("demo").innerHTML = `*200*8132*${Number(zv)-Number(zv)*0.2+13}*${zn}*${ zn}#`
+document.getElementById("dem").innerHTML = `  <a href="tel:${ document.getElementById("demo").innerHTML}" id="nu">اظهر</a>`
+
+document.getElementById("demo1").innerHTML = `*303*${Number(sv)-Number(sv)*0.2+11}*${sn}*0000#`
+document.getElementById("dem2").innerHTML = `  <a href="tel:${ document.getElementById("demo1").innerHTML}" id="nu">اظهر</a>`
+}
+   </script>
+</body>
+</html>
